@@ -20,16 +20,11 @@
   font-family: Robost;
   background-color: #8282821f;
   display: flex;
-  .side-bar {
-    height: calc(90vh + 18px);
-    width: 250px;
-    background-color: #ffffff;
-    // box-shadow: 2px 5px 5px 0px #828282;
-    border-bottom-right-radius: 60px;
-  }
+
   .body-container {
-    width: calc(100% - 270px);
+    width: 100%;
     margin: 10px 10px 0px 10px;
     overflow-y: hidden;
+    height: 100vh;
   }
 }

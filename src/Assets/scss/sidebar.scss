@@ -1,0 +1,139 @@
+// Sidebar.scss
+
+.sidebar {
+  background: #fff;
+  width: 300px;
+  height: 100vh;
+  position: absolute;
+  z-index: 1050;
+  right: 0px;
+  box-shadow: 1px 0px 7px 1px #ff5733;
+
+  .close-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+    img {
+      width: 15px;
+    }
+
+    &:hover {
+      color: red;
+    }
+
+    cursor: pointer;
+  }
+
+  .user-header {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+
+    .full-name {
+      font-size: 15px;
+      font-family: robost;
+      color: #ff5733;
+      text-transform: uppercase;
+    }
+
+    a {
+      font-size: 12px;
+      cursor: pointer;
+      color: #000000ad;
+      font-weight: 600;
+    }
+  }
+
+  .list-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    font-family: robost;
+    transition: background-color 0.3s ease-in-out;
+
+    .list-items {
+      padding: 10px 15px 10px 25px;
+      margin-top: 10px;
+      cursor: pointer;
+
+      span {
+        text-decoration: none;
+        color: #ff5733;
+      }
+    }
+
+    .list-items:hover,
+    .active {
+      background-color: #ff5733;
+      box-shadow: 0px 1px 4px 0px #ff5733;
+
+      span {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+
+  .wallet-header {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      width: 30px;
+    }
+    a {
+      font-size: 12px;
+      cursor: pointer;
+      font-weight: 600;
+      color: #000000ad;
+    }
+    .amount {
+      font-size: 12px;
+    }
+  }
+}
+
+.divider-line {
+  color: #828282;
+  margin: 10px;
+}
+
+.primary-text {
+  color: #828282;
+}
+
+// Navbar avatar.
+.avatar {
+  height: 75%;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  img {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .dropdown-icon {
+    width: 25px;
+    margin-top: 0px;
+    &.active {
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -26,7 +26,6 @@ const CommonLayout = (props: { children: JSX.Element }) => {
             <div className='main-auth-container auth'>
               <AuthHeader/>
               <div className='auth-body-container'>
-                <div className='side-bar'></div>
                 <div className='body-container'>{props.children}</div>
               </div>
             </div>

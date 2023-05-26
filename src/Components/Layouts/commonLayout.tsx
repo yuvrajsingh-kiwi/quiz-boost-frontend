@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from '../Shared/Navbar/header';
 import { useLocation } from 'react-router-dom';
 import { PATHS } from '../../Routes/paths';
@@ -6,7 +6,6 @@ import AuthHeader from '../Shared/Navbar/authHeader';
 
 const CommonLayout = (props: { children: JSX.Element }) => {
   const { pathname } = useLocation();
-  const [sidebarStatus, setSidebarStatus] = useState(false);
 
   return (
     <>
@@ -25,7 +24,7 @@ const CommonLayout = (props: { children: JSX.Element }) => {
             PATHS.FORGOT_PASSWORD,
           ].includes(pathname) ? (
             <div className='main-auth-container auth'>
-              <AuthHeader setSidebarStatus={setSidebarStatus} sidebarStatus={sidebarStatus}/>
+              <AuthHeader/>
               <div className='auth-body-container'>
                 <div className='side-bar'></div>
                 <div className='body-container'>{props.children}</div>

@@ -1,0 +1,41 @@
+.filled-button {
+  background-color: #ff5733 !important;
+  border: none;
+  border-radius: 0px;
+  color: #fff;
+  border: 1px solid #ff5733;
+  cursor: pointer;
+  padding: 7px 15px 7px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Roboto;
+  &.radius {
+    border-radius: 5px;
+  }
+}
+
+.filled-button:hover {
+  background-color: #fff !important;
+  color: #ff5733;
+  box-shadow: 2px 1px 1px 1px;
+  border: 1px solid #ff5733;
+}
+
+.outline-button {
+  border: 1px solid #ff5733;
+  text-align: center;
+  padding: 7px 15px 7px 15px;
+  text-align: center;
+  cursor: pointer;
+  color: #ff5733;
+  text-transform: uppercase;
+  font-family: Roboto;
+  &.radius {
+    border-radius: 5px;
+  }
+}
+
+.outline-button:hover {
+  background-color: #ff5733;
+  color: white;
+}

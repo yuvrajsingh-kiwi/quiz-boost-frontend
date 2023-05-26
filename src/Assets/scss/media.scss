@@ -1,0 +1,12 @@
+// show it on devices with max of 767 px and lower
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 767px) {
+  .hidden-desktop {
+    display: none;
+  }
+}

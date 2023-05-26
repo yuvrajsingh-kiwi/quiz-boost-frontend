@@ -1,0 +1,42 @@
+@media (min-width: 767px) {
+  .form-control {
+    width: 80%;
+  }
+}
+
+.form-control {
+  background-color: transparent !important;
+  height: fit-content;
+  border: 1px solid #c1bbbb;
+  margin: 5px;
+  font-family: Robost;
+  height: 50px;
+  border-radius: 0px !important;
+  &.error {
+    border: 1px solid red;
+    border-left-color: red;
+    border-left-width: 5px;
+  }
+}
+
+.form-control:focus {
+  border: 1px solid #c1bbbb;
+  color: #ff5733;
+  box-shadow: none;
+  border-left-color: #ff5733;
+  border-left-width: 5px;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  &.link {
+    flex-direction: row-reverse !important;
+  }
+  &.custom-button {
+    margin: 10px 2% 0px 2%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

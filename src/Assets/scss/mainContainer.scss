@@ -1,0 +1,139 @@
+.main-container {
+  padding: 0px 4% 0px 4%;
+  font-family: Roboto;
+}
+
+.row {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.top-welcome {
+  margin: 4px 0px 10px 0px;
+  border-right: 5px solid #ff5733;
+  .left-dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.sub-heading {
+  margin-top: 20px;
+  color: #828282;
+  padding-left: 5px;
+  text-align: center;
+  &.right {
+    border-right: 4px solid #ff5733;
+  }
+  &.left {
+    border-left: 4px solid #ff5733;
+  }
+  &.features {
+    font-size: 15px !important;
+  }
+  &.auth {
+    text-align: center;
+  }
+  span {
+    color: #ff5733;
+  }
+}
+
+.works-cont {
+  height: fit-content;
+  .work-heading {
+    height: 100px;
+    margin-top: 10px;
+    color: #ff5733;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ff5733;
+    border-left-width: 20px;
+  }
+
+  li {
+    text-decoration: none;
+    list-style: none;
+    margin-top: 10px;
+    color: #ff5733;
+    font-weight: bold;
+  }
+  p {
+    color: #828282;
+    text-align: justify;
+    letter-spacing: 1px;
+  }
+}
+
+.winn-container {
+  height: fit-content;
+  margin: 4px 0px 10px 0px;
+  border-left: 5px solid #ff5733;
+  margin-top: 20px !important;
+}
+
+.main-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .spinner-border {
+    --bs-spinner-width: 3rem;
+    --bs-spinner-height: 3rem;
+    color: #ff5733;
+  }
+}
+
+.features-cont {
+  height: fit-content;
+  .left-fet,
+  .right-fet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      color: #ff5733;
+      font-size: 50px;
+    }
+  }
+}
+
+.details-container {
+  .work-heading {
+    height: 100px;
+    margin-top: 10px;
+    color: #ff5733;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ff5733;
+    border-left-width: 20px;
+  }
+
+  li {
+    text-decoration: none;
+    list-style: none;
+    margin-top: 10px;
+    color: #ff5733;
+    font-weight: bold;
+  }
+  p {
+    color: #828282;
+    text-align: justify;
+    letter-spacing: 1px;
+  }
+}
+.marg {
+  margin-top: 20px !important;
+}

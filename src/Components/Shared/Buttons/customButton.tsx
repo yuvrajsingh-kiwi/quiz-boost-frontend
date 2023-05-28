@@ -3,12 +3,12 @@ import React from 'react';
 const CustomButton = (props: { buttonText: string; onclick: () => void, className: string }) => {
   const { buttonText, onclick, className } = props;
   return (
-    <div
+    <span
       className={className}
       onClick={() => onclick()}
     >
       {buttonText}
-    </div>
+    </span>
   );
 };
 

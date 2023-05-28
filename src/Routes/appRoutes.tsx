@@ -13,6 +13,11 @@ const How = React.lazy(() => import('../Pages/Static/how'));
 const Features = React.lazy(() => import('../Pages/Static/features'));
 const About = React.lazy(() => import('../Pages/Static/about'));
 const Dashboard = React.lazy(() => import('../Pages/Dashboard/dashboard'));
+const Winnings = React.lazy(() => import('../Pages/Winnings/userWinnings'));
+const Bank = React.lazy(() => import('../Pages/Bank/bank'));
+const ScheduledQuizes = React.lazy(
+  () => import('../Pages/Quizes/ScheduledListing/scheduledQuizes')
+);
 
 const AppRoutes = () => {
   return (
@@ -45,10 +50,22 @@ const AppRoutes = () => {
               path={PATHS.ABOUT}
               element={<PublicRouteWrapper element={<About />} />}
             />
-            Private Routing
+            {/* Private Routing */}
             <Route
               path={PATHS.DASHBOARD}
               element={<PrivateRouteWrapper element={<Dashboard />} />}
+            />
+            <Route
+              path={`${PATHS.WINNINGS}/:id`}
+              element={<PrivateRouteWrapper element={<Winnings />} />}
+            />
+            <Route
+              path={`${PATHS.BANK_DETAILS}/:id`}
+              element={<PrivateRouteWrapper element={<Bank />} />}
+            />
+            <Route
+              path={`${PATHS.SCHEDULED_QUIZES}/:id`}
+              element={<PrivateRouteWrapper element={<ScheduledQuizes />} />}
             />
           </Routes>
         </CommonLayout>

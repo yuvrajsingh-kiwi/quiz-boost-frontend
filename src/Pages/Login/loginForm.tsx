@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import CustomInput from '../../Components/Shared/Inputs/customInput';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { PATHS } from '../../Routes/paths';
 import { Form, Formik } from 'formik';
 import { LOGIN_VALUES } from '../../Constants/initialValues';
@@ -22,28 +22,16 @@ const LoginForm = (props: LoginPageProps) => {
             <Row className='login-container'>
               <Row>
                 <Col className='input-box'>
-                  <CustomInput
-                    type='text'
-                    placeholder='Email Address'
-                  />
+                  <CustomInput type='text' placeholder='Email Address' />
                 </Col>
               </Row>
               <Row>
                 <Col className='input-box'>
-                  <CustomInput
-                    type='text'
-                    placeholder='Password'
-                  />
+                  <CustomInput type='text' placeholder='Password' />
                 </Col>
               </Row>
-              <Row className='forgot-link'>
-                <Link to='#'>Forgot Password?</Link>
-              </Row>
               <div className='submit-button mt-2'>
-                <button
-                  className='filled-button'
-                  type='submit'
-                >
+                <button className='filled-button' type='submit'>
                   Login
                 </button>
               </div>
@@ -51,8 +39,6 @@ const LoginForm = (props: LoginPageProps) => {
           </Form>
         )}
       </Formik>
-
-      {/* Lower part */}
       <Row className='additional-login'>
         <div className='regs-link login'>
           <button

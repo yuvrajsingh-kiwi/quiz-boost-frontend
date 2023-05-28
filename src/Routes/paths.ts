@@ -10,4 +10,11 @@ export const PATHS = {
   HOW: '/how',
   ABOUT: '/about',
   FEATURES: '/features',
+  WINNINGS: '/winnings',
+  SCHEDULED_QUIZES: '/scheduled-quizes',
+  ALL_COURSES: '/all_courses',
+  MY_PROFILE: '/my_profile',
+  MENTOR_PROFILE: '/mentor_profile',
+  ASKS: '/asks',
+  BANK_DETAILS: '/bank-details',
 };

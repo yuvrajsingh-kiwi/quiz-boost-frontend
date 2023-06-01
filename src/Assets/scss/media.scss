@@ -2,11 +2,53 @@
 @media (max-width: 767px) {
   .hidden-mobile {
     display: none !important;
+    &.show {
+      display: block;
+    }
+  }
+  .main-body-container {
+    .sidebar-container {
+      width: 300px;
+      position: relative;
+      top: 0px;
+    }
+    .body-container {
+      width: 100% !important;
+      height: 100vh;
+      padding: 10px 0px 0px 10px;
+      background-color: #82828224;
+    }
   }
 }
 
 @media (min-width: 767px) {
   .hidden-desktop {
-    display: none;
+    display: none !important;
+  }
+}
+
+.main-body-container {
+  width: 100%;
+  .sidebar-container {
+    width: 300px;
+    float: left;
+    &.show {
+      width: 300px;
+      position: relative;
+      top: 0px;
+    }
+  }
+  .body-container {
+    width: calc(100% - 300px);
+    height: 100vh;
+    float: right;
+    padding: 10px 0px 0px 10px;
+    background-color: #82828224;
+    &.hide-nav {
+      width: 100% !important;
+      height: 100vh;
+      padding: 10px 0px 0px 10px;
+      background-color: #82828224;
+    }
   }
 }

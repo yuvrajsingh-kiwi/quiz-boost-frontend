@@ -17,6 +17,8 @@ const Login = () => {
     <LoginTemplates
       text='Please continue with your account.'
       hidden={false}
+      anotherButtonText='REGISTER'
+      url={PATHS.REGISTER}
     >
       <LoginForm onSubmit={(values: LoginValues) => onLogin(values)} />
     </LoginTemplates>

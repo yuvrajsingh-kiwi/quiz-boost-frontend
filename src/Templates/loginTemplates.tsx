@@ -9,6 +9,8 @@ const LoginTemplates = (props: {
   hidden: boolean;
   children: JSX.Element;
   text: string;
+  anotherButtonText?: string;
+  url: string;
 }) => {
   const navigate = useNavigate();
   return (
@@ -33,7 +35,10 @@ const LoginTemplates = (props: {
           <Row className='lower-container'>
             <Col>
               <span>
-                Or continue with: <span className='login-with'>Google</span>
+                <span className='text-color cursor-pointer' onClick={() => navigate(props.url)}>
+                  {props.anotherButtonText}
+                </span>{' '}
+                | Or continue with: <span className='login-with'>Google</span>
               </span>
             </Col>
           </Row>
@@ -42,7 +47,7 @@ const LoginTemplates = (props: {
         {/* Right container for icon */}
         <Col
           md={6}
-          className='right-container hidden-desktop'
+          className='right-container'
         >
           <Row>
             <Logo />

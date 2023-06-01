@@ -39,7 +39,7 @@ const LoginForm = (props: LoginPageProps) => {
           </Form>
         )}
       </Formik>
-      <Row className='additional-login'>
+      <Row className='additional-login d-none'>
         <div className='regs-link login'>
           <button
             className='regs-button'

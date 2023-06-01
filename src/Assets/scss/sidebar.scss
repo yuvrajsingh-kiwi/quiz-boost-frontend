@@ -2,12 +2,12 @@
 
 .sidebar {
   background: #fff;
+  // margin-top: 80px;
   width: 300px;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   z-index: 1050;
-  right: 0px;
-  box-shadow: 1px 0px 7px 1px #ff5733;
+  left: 0px;
 
   .close-icon {
     display: flex;
@@ -25,6 +25,7 @@
   }
 
   .user-header {
+    margin-top: 30px;
     height: fit-content;
     width: 100%;
     display: flex;
@@ -33,15 +34,16 @@
     flex-direction: column;
 
     img {
-      height: 50px;
-      width: 50px;
+      height: 70px;
+      width: 70px;
     }
 
     .full-name {
-      font-size: 15px;
-      font-family: robost;
+      font-size: 20px;
+      font-family: Roboto;
       color: #ff5733;
       text-transform: uppercase;
+      margin-top: 10px;
     }
 
     a {
@@ -57,11 +59,12 @@
     padding: 0;
     margin: 0;
     margin-top: 20px;
-    font-family: robost;
+    font-family: Roboto;
     transition: background-color 0.3s ease-in-out;
+    font-size: 18px;
 
     .list-items {
-      padding: 10px 15px 10px 25px;
+      padding: 10px 15px 10px 50px;
       margin-top: 10px;
       cursor: pointer;
 
@@ -123,12 +126,18 @@
   position: absolute;
   top: 15px;
   right: 10px;
+  align-items: center;
   img {
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     cursor: pointer;
+    margin-right: 30px;
+    transform: rotate(180deg);
+    &.cross {
+      height: 20px;
+      width: 20px;
+    }
   }
-
   .dropdown-icon {
     width: 25px;
     margin-top: 0px;

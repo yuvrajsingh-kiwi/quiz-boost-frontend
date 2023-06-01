@@ -45,7 +45,7 @@ const RegisterForm = (props: RegistrationProps) => {
           </Form>
         )}
       </Formik>
-      <Row className='additional-login'>
+      <Row className='additional-login d-none'>
         <div className='regs-link regs'>
           <button className='regs-button' onClick={() => navigate(PATHS.LOGIN)}>
             Login
